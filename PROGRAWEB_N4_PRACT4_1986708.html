@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Conversiones metricas</title>
+        <STYLE type="TEXT/CSS">
+            <!--
+                h1{ font-size: 40pt;
+                    font-family: sans-serif;
+                    font-style: arial;
+                    text-align: center;
+                    font-weight: bold;
+                    text-decoration: underline;
+                    color: white;
+            
+                }
+                body{ background-color: rgb(170, 170, 243);
+                }
+            p{
+                font-size: 15pt;
+                    font-family: sans-serif;
+                    font-style: arial;
+                    text-align: center;
+                    font-weight: bold;
+                    color: rgb(0, 16, 247);
+            }
+                -->
+            </STYLE>
+</head>
+        <body>
+            <h1>Conversiones metricas </h1>
+                </body>
+        <script>
+
+var unidad1
+var resultado
+
+
+unidad1 = window.prompt ("Cuanta cantidad desea convertir");
+let string = window.prompt ("Escriba la unidad que desea convertir (en minuscula, sin comas ni espacios)" );
+
+switch (string){
+
+    case 'centimetros':
+   
+        let string2 = window.prompt ("Escriba la unidad a las que desea convertir (en minuscula, sin comas ni espacios)" );
+        switch (string2)
+        {
+            case 'centimetros':
+                window.alert("No es correcto debido a que no se puede convertir a la misma unidad metrica ");
+                document.writeln("<p> Conversion metrica no valida </p>");
+                break;
+
+             case 'metros':
+                 resultado = unidad1/100
+                 document.writeln("<p>" + unidad1+ " " + string+ " equivale a " + resultado+ " " +string2 +"</p>");
+                break;
+
+            case 'litros':
+                window.alert("No es correcto debido a que centimetros es una unidad de longitud y litros es una unidad de volumen  ");
+                document.writeln("<p>Conversion metrica no valida</p>");
+                break;
+
+            case 'gramos':
+                window.alert("No es correcto debido a que centimetros es una unidad de longitud y gramos es una unidad de masa");
+                document.writeln("<p> Conversion metrica no valida </p> ");
+                break;
+
+            case 'pulgadas': 
+                  resultado = unidad1/2.54
+                  document.writeln("<p>" +unidad1+ " " + string+ " equivale a " + resultado+ " " +string2 + "</p>");
+                break;
+
+            case 'cuartos':
+                  window.alert("No es correcto debido a que centimetros es una unidad de longitud y cuartos es una unidad de volumen");
+                  document.writeln("<p>Conversion metrica no valida </p>");
+                break;
+
+            case 'libras':
+                 window.alert("No es correcto debido a que centimetros es una unidad de longitud y libras es una unidad de masa");
+                 document.writeln(" <p> Conversion metrica no valida </p> ");
+                 break;        
+
+            case 'kilogramos':
+                 window.alert("No es correcto debido a que centimetros es una unidad de longitud y kilogramos es una unidad de masa");
+                 document.writeln("<p> Conversion metrica no valida </p> ");
+                 break;
+                 
+        }  
+        break;
+
+    case 'metros':
+        let string3 = window.prompt ("Escriba la unidad a las que desea convertir (en minuscula, sin comas ni espacios)" );
+        switch (string3)
+        {
+            case 'centimetros':
+                  resultado = unidad1*100
+                  document.writeln(" <p> " +unidad1+ " " + string+ " equivale a " + resultado+ " " +string3 + "</p>" );
+                break;
+            
+            case 'metros':
+                window.alert("No es correcto debido a que no se puede convertir a la misma unidad metrica");
+                document.writeln(" <p> Conversion metrica no valida </p>");
+                break;  
+
+            case 'litros':
+                window.alert("No es correcto debido a que metros es una unidad de longitud y litros es una unidad de volumen");
+                document.writeln(" <p> Conversion metrica no valida </p> ");
+                break;
+
+            case 'gramos':
+                window.alert("No es correcto debido a que metros es una unidad de longitud y gramos es una unidad de masa");
+                document.writeln(" <p> Conversion metrica no valida </p> ");
+                break;
+
+            case 'pulgadas': 
+                  resultado = unidad1*39.37
+                  document.writeln("<p>" + unidad1 + " " + string+ " equivale a " + resultado+ " " +string3+ "</p>");
+                break;
+
+            case 'cuartos':
+                  window.alert("No es correcto debido a que centimetros es una unidad de longitud y cuartos es una unidad de volumen");
+                  document.writeln(" <p> Conversion metrica no valida </p> ");
+                break;   
+            
+            case 'libras':
+                 window.alert("No es correcto debido a que metros es una unidad de longitud y libras es una unidad de masa");
+                 document.writeln(" <p> Conversion metrica no valida </p> ");
+                 break;
+
+            case 'kilogramos':
+                 window.alert("No es correcto debido a que metros es una unidad de longitud y kilogramos es una unidad de masa");
+                 document.writeln(" <p> Conversion metrica no valida </p> ");
+                 break;
+                 
+        }     
+        
+        break;
+    case 'litros':
+        let string4 = window.prompt ("Escriba la unidad a las que desea convertir (en minuscula, sin comas ni espacios)" );
+        switch (string4)    
+        {
+            case 'centimetros':
+                window.alert("No es correcto debido a que litros es una unidad de volumen y centimetros es una unidad de longitud");
+                document.writeln(" <p> Conversion metrica no valida </p> ");
+                break;
+
+            case 'metros':
+                window.alert("No es correcto debido a que litros es una unidad de volumen y metros es una unidad de longitud");
+                document.writeln(" <p> Conversion metrica no valida </p> ");
+                break;  
+
+            case 'litros':
+                window.alert("No es correcto debido a que no se puede convertir a la misma unidad metrica");
+                document.writeln(" <p> Conversion metrica no valida </p> ");
+                break;
+
+            case 'gramos':
+                window.alert("No es correcto debido a que litros es una unidad de volumen y gramos es una unidad de masa ");
+                document.writeln(" <p> Conversion metrica no valida </p> ");
+                break;
+
+            case 'pulgadas': 
+                window.alert("No es correcto debido a que litros es una unidad de volumen y pulgadas es una unidad de longitud ");
+                document.writeln(" <p> Conversion metrica no valida </p> ");
+                break;
+
+            case 'cuartos':
+                resultado = (unidad1*500000000)/473176473
+                document.writeln("<p>" +unidad1+ " " + string+ " equivale a " + resultado+ " " +string4 + "</p>");
+                break; 
+            
+            case 'libras':
+                 window.alert("No es correcto debido a que litros es una unidad de volumen y libras es una unidad de masa");
+                 document.writeln(" <p> Conversion metrica no valida </p> ");
+                 break;
+                 
+            case 'kilogramos':
+                 window.alert("No es correcto debido a que litros es una unidad de volumen y kilogramos es una unidad de masa");
+                 document.writeln(" <p> Conversion metrica no valida </p> ");
+                 break;
+                 
+        }
+
+        
+        break;
+
+    case 'gramos':
+    let string5 = window.prompt ("Escriba la unidad a las que desea convertir (en minuscula, sin comas ni espacios)" );
+        switch (string5) 
+        {
+            case 'centimetros':
+                window.alert("No es correcto debido a que gramos es una unidad de masa y centimetros es una unidad de longitud");
+                document.writeln(" <p> Conversion metrica no valida </p>");
+                break;
+
+            case 'metros':
+                window.alert("No es correcto debido a que gramos es una unidad de masa y metros es una unidad de longitud");
+                document.writeln(" <p> Conversion metrica no valida </p> ");
+                break;  
+
+            case 'litros':
+                window.alert("No es correcto debido a que que gramos es una unidad de masa y litros es una unidad de volumen");
+                document.writeln(" <p> Conversion metrica no valida </p> ");
+                break;
+
+            case 'gramos':
+                window.alert("No es correcto debido a que no se puede convertir a la misma unidad metrica");
+                document.writeln("<p> Conversion metrica no valida </p> ");
+                break;
+
+            case 'pulgadas': 
+                window.alert("No es correcto debido a que gramos es una unidad de masa y pulgadas es una unidad de longitud ");
+                document.writeln(" <p> Conversion metrica no valida </p> ");
+                break;
+
+            case 'cuartos':
+                 window.alert("No es correcto debido a que gramos es una unidad de masa y cuartos es una unidad de volumen");
+                 document.writeln(" <p> Conversion metrica no valida </p> ");
+                 break;
+
+            case 'libras':
+                 resultado = unidad1/454
+                 document.writeln("<p>" +unidad1+ " " + string+ " equivale a " + resultado+ " " +string5 + "</p>");
+                 break;
+
+            case 'kilogramos':
+                  resultado = unidad1/100
+                  document.writeln("<p> "+ unidad1+ " " + string+ " equivale a " + resultado+ " " +string5 + "</p>");
+                 break;
+        }
+
+        break;
+    
+    case 'pulgadas':
+    let string6 = window.prompt ("Escriba la unidad a las que desea convertir (en minuscula, sin comas ni espacios)" );
+        switch (string6)
+        {   
+            case 'centimetros':
+                resultado = unidad1*2.54
+                document.writeln("<p>" +unidad1+ " " + string+ " equivale a " + resultado+ " " +string6+ "</p>");
+                break;
+            
+            case 'metros':
+                resultado = unidad1/39.37
+                document.writeln("<p>"+unidad1+ " " + string+ " equivale a " + resultado+ " " +string6+ "</p>");
+                break; 
+            
+            case 'litros':
+                window.alert("No es correcto debido a que que pulgadas es una unidad de longitud y litros es una unidad de volumen");
+                document.writeln("<p> Conversion metrica no valida </p>");
+                break;
+
+            case 'gramos':
+                window.alert("No es correcto debido a que que pulgadas es una unidad de longitud y gramos es una unidad de masa");
+                document.writeln(" <p> Conversion metrica no valida </p> ");
+                break;
+
+            case 'pulgadas': 
+                window.alert("No es correcto debido a que no se puede convertir a la misma unidad metrica ");
+                document.writeln(" <p> Conversion metrica no valida </p> ");
+                break;
+
+            case 'cuartos':
+                 window.alert("No es correcto debido a que pulgadas es una unidad de longitud y cuartos es una unidad de volumen");
+                 document.writeln(" <p> Conversion metrica no valida </p> ");
+                 break;
+
+            case 'libras':
+                 window.alert("No es correcto debido a que pulgadas es una unidad de longitud y libras es una unidad de masa");
+                 document.writeln(" <p> Conversion metrica no valida </p> ");
+                 break;
+
+            case 'kilogramos':
+                window.alert("No es correcto debido a que que pulgadas es una unidad de longitud y kilogramos es una unidad de masa");
+                document.writeln(" <p> Conversion metrica no valida </p> ");
+                 break;
+
+        } 
+        break;
+
+    case 'cuartos':
+    let string7 = window.prompt ("Escriba la unidad a las que desea convertir (en minuscula, sin comas ni espacios)");
+        switch (string7)
+        {
+            case 'centimetros':
+                window.alert("No es correcto debido a que cuartos es una unidad de volumen y centimetros es una unidad de longitud ");
+                document.writeln(" <p> Conversion metrica no valida </p> ");
+                break;
+
+            case 'metros':
+                window.alert("No es correcto debido a que cuartos es una unidad de volumen y metros es una unidad de longitud");
+                document.writeln("<p> Conversion metrica no valida </p> ");
+                break; 
+
+            case 'litros':
+                resultado = (unidad1*473176473)/500000000
+                document.writeln("<p>" +unidad1+ " " + string+ " equivale a " + resultado+ " " +string7 + "</p>");
+                break;
+              
+            case 'gramos':
+                window.alert("No es correcto debido a que que cuartos es una unidad de volumen y gramos es una unidad de masa");
+                document.writeln("<p> Conversion metrica no valida </p>");
+                break;
+
+            case 'pulgadas': 
+                window.alert("No es correcto debido a que cuartos es una unidad de volumen y pulgadas es una unidad de longitud");
+                document.writeln("<p> Conversion metrica no valida </p> ");
+                break;
+
+            case 'cuartos':
+                 window.alert("No es correcto debido a que no se puede convertir a la misma unidad metrica");
+                 document.writeln("<p> Conversion metrica no valida </p> ");
+                 break;
+
+            case 'libras':
+                 window.alert("No es correcto debido a que cuartos es una unidad de volumen y libras es una unidad de masa");
+                 document.writeln(" <p> Conversion metrica no valida </p> ");
+                 break;
+
+            case 'kilogramos':
+                window.alert("No es correcto debido a que cuartos es una unidad de volumen y kilogramos es una unidad de masa");
+                document.writeln(" <p> Conversion metrica no valida </p> ");
+                 break;
+
+        } 
+
+        break;
+
+    case 'libras':
+    let string8 = window.prompt ("Escriba la unidad a las que desea convertir (en minuscula, sin comas ni espacios)" );
+        switch (string8)
+        {
+
+            case 'centimetros':
+                window.alert("No es correcto debido a que libras es una unidad de masa y centimetros es una unidad de longitud ");
+                document.writeln("<p> Conversion metrica no valida </p> ");
+                break;
+
+            case 'metros':
+                window.alert("No es correcto debido a que libras es una unidad de masa y metros es una unidad de longitud");
+                document.writeln(" <p> Conversion metrica no valida </p> ");
+                break; 
+
+            case 'litros':
+                 window.alert("No es correcto debido a que libras es una unidad de masa y litros es una unidad de volumen");
+                 document.writeln("<p> Conversion metrica no valida </p> ");
+                break;
+              
+            case 'gramos':
+            resultado = unidad1*454
+                document.writeln("<p>" +unidad1+ " " + string+ " equivale a " + resultado+ " " +string8 +"</p>");
+                break;
+
+            case 'pulgadas': 
+                window.alert("No es correcto debido a que libras es una unidad de masa y pulgadas es una unidad de longitud");
+                document.writeln(" <p> Conversion metrica no valida </p> ");
+                break;
+
+            case 'cuartos':
+                 window.alert("No es correcto debido a que libras es una unidad de masa y cuartos es una unidad de volumen");
+                 document.writeln(" <p> Conversion metrica no valida </p> ");
+                 break;
+
+            case 'libras':
+                 window.alert("No es correcto debido a que no se puede convertir a la misma unidad metrica");
+                 document.writeln("<p> Conversion metrica no valida </p> ");
+                 break;
+
+            case 'kilogramos':
+                resultado = unidad1/ 2.205
+                document.writeln("<p>" + unidad1+ " " + string+ " equivale a " + resultado+ " " +string8+"</p>");
+                break;
+
+        }
+        break; 
+
+    case 'kilogramos':
+    let string9 = window.prompt ("Escriba la unidad a las que desea convertir (en minuscula, sin comas ni espacios)" );
+        switch (string9){
+
+            case 'centimetros':
+                window.alert("No es correcto debido a que kilogramos es una unidad de masa y centimetros es una unidad de longitud ");
+                document.writeln("<p> Conversion metrica no valida </p> ");
+                break;
+
+            case 'metros':
+                window.alert("No es correcto debido a que kilogramos es una unidad de masa y metros es una unidad de longitud");
+                document.writeln(" <p> Conversion metrica no valida </p> ");
+                break; 
+            
+            case 'litros':
+                 window.alert("No es correcto debido a que kilogramos es una unidad de masa y litros es una unidad de volumen");
+                 document.writeln(" <p> Conversion metrica no valida </p> ");
+                break;
+
+             case 'gramos':
+            resultado = unidad1*1000
+                document.writeln("<p>" +unidad1+ " " + string+ " equivale a " + resultado+ " " +string9+ "</p>" );
+                break;
+
+            case 'pulgadas': 
+                window.alert("No es correcto debido a que kilogramos es una unidad de masa y pulgadas es una unidad de longitud");
+                document.writeln("<p> Conversion metrica no valida </p> ");
+                break;
+
+            case 'cuartos':
+                 window.alert("No es correcto debido a que kilogramos es una unidad de masa y cuartos es una unidad de volumen");
+                 document.writeln(" <p> Conversion metrica no valida </p> ");
+                 break;
+
+            case 'libras':
+                resultado = unidad1*2.205
+                document.writeln("<p>" +unidad1+ " " + string+ " equivale a " + resultado+ " " +string9 + "</p>");
+                 break;
+
+            case 'kilogramos':
+                window.alert("No es correcto debido a que no se puede convertir a la misma unidad metrica");
+                document.writeln(" <p> Conversion metrica no valida </p> ");
+                break;
+        }
+        break;
+
+}
+
+</script>
+</head>
+</html>
